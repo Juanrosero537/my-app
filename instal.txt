@@ -1,0 +1,11 @@
+Instalacion de app
+
+Comandos
+1. npx create-react-app nombre-app
+2. npm init -y
+3. npm install express mysql2
+4. npm install axios
+5. npm install cors (opcional)
+
+crear archivo de conexion a la DB, ejemplo "server.js". En consola ejecutar node server.js
+lanzar app React (npm start) en otra consola diferente donde estamos ejecutando "server.js" 
