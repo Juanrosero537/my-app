@@ -9,10 +9,10 @@ const port = 3001;
 app.use(cors());
 
 const connection = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: '8262',
-    database: 'prueba'
+    host: 'sql205.infinityfree.com',
+    user: 'if0_35906588',
+    password: 'j3VTOCYfSLqk',
+    database: 'if0_35906588_caps_rey'
 });
 
 connection.connect(err => {
@@ -24,7 +24,7 @@ connection.connect(err => {
 });
 
 app.get('/api/data', (req, res) => {
-    connection.query('SELECT * FROM categorias', (err, results) => {
+    connection.query('SELECT * FROM bancos', (err, results) => {
         if (err) {
             return res.status(500).send(err);
         }
