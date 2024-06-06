@@ -7,7 +7,7 @@ function App() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:3001/api/data')
+    axios.get('http://my-first-app-node.herokuapp.com/api/data')
       .then(response => {
         setData(response.data);
       })
